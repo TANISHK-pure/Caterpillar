@@ -1,3 +1,0 @@
-[console_scripts]
-fleet_node = nfp_bridge_pkg.fleet_node:main
-traffic_cop = nfp_bridge_pkg.traffic_cop:main

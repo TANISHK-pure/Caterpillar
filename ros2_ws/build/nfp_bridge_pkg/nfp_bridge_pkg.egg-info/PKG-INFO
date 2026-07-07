@@ -1,7 +1,0 @@
-Metadata-Version: 2.1
-Name: nfp-bridge-pkg
-Version: 0.0.0
-Summary: NFP to Nav2 Bridge Node
-Maintainer: tanishk
-Maintainer-email: ctanishk8@gmail.com
-License: Apache License 2.0

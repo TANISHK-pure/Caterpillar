@@ -1,1 +1,0 @@
-/home/tanishk/ros2_ws/src/nfp_bridge_pkg/setup.py

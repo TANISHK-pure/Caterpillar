@@ -1,1 +1,0 @@
-/home/tanishk/ros2_ws/src/cat_paddock_sim/launch/paddock_demo.launch.py

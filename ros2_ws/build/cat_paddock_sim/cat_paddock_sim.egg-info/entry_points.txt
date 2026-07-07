@@ -1,4 +1,0 @@
-[console_scripts]
-hybrid_astar_node = cat_paddock_sim.hybrid_astar_node:main
-lidar_perception = cat_paddock_sim.lidar_perception:main
-truck_orchestrator = cat_paddock_sim.truck_orchestrator:main
