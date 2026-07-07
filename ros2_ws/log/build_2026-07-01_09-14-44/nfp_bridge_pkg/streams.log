@@ -1,0 +1,25 @@
+[0.922s] Invoking command in '/home/tanishk/ros2_ws/build/nfp_bridge_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/tanishk/ros2_ws/build/nfp_bridge_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tanishk/ros2_ws/install/nfp_bridge_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/tanishk/ros2_ws/build/nfp_bridge_pkg/build --no-deps symlink_data
+[1.114s] running develop
+[1.224s] running egg_info
+[1.224s] creating nfp_bridge_pkg.egg-info
+[1.235s] writing nfp_bridge_pkg.egg-info/PKG-INFO
+[1.235s] writing dependency_links to nfp_bridge_pkg.egg-info/dependency_links.txt
+[1.235s] writing entry points to nfp_bridge_pkg.egg-info/entry_points.txt
+[1.235s] writing requirements to nfp_bridge_pkg.egg-info/requires.txt
+[1.235s] writing top-level names to nfp_bridge_pkg.egg-info/top_level.txt
+[1.235s] writing manifest file 'nfp_bridge_pkg.egg-info/SOURCES.txt'
+[1.256s] reading manifest file 'nfp_bridge_pkg.egg-info/SOURCES.txt'
+[1.257s] writing manifest file 'nfp_bridge_pkg.egg-info/SOURCES.txt'
+[1.268s] running build_ext
+[1.268s] Creating /home/tanishk/ros2_ws/install/nfp_bridge_pkg/lib/python3.12/site-packages/nfp-bridge-pkg.egg-link (link to .)
+[1.268s] Installing fleet_node script to /home/tanishk/ros2_ws/install/nfp_bridge_pkg/lib/nfp_bridge_pkg
+[1.268s] Installing traffic_cop script to /home/tanishk/ros2_ws/install/nfp_bridge_pkg/lib/nfp_bridge_pkg
+[1.268s] 
+[1.268s] Installed /home/tanishk/ros2_ws/build/nfp_bridge_pkg
+[1.268s] running symlink_data
+[1.269s] creating /home/tanishk/ros2_ws/install/nfp_bridge_pkg/share/ament_index
+[1.269s] creating /home/tanishk/ros2_ws/install/nfp_bridge_pkg/share/ament_index/resource_index
+[1.269s] creating /home/tanishk/ros2_ws/install/nfp_bridge_pkg/share/ament_index/resource_index/packages
+[1.269s] symbolically linking /home/tanishk/ros2_ws/build/nfp_bridge_pkg/resource/nfp_bridge_pkg -> /home/tanishk/ros2_ws/install/nfp_bridge_pkg/share/ament_index/resource_index/packages
+[1.269s] symbolically linking /home/tanishk/ros2_ws/build/nfp_bridge_pkg/package.xml -> /home/tanishk/ros2_ws/install/nfp_bridge_pkg/share/nfp_bridge_pkg
+[1.289s] Invoked command in '/home/tanishk/ros2_ws/build/nfp_bridge_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/tanishk/ros2_ws/build/nfp_bridge_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tanishk/ros2_ws/install/nfp_bridge_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/tanishk/ros2_ws/build/nfp_bridge_pkg/build --no-deps symlink_data

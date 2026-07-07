@@ -1,0 +1,34 @@
+# MTL file - created by a modified js OBJExporter
+
+newmtl matCaterpillar_789c
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pr 0.8585786437626904
+Pds 1
+Pl 1
+Ka 1 1 1
+Kd 0.5879999995231628 0.5879999995231628 0.5879999995231628
+Ke 0 0 0
+
+newmtl Accessories
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pr 0.8585786437626904
+Pds 1
+Pl 1
+Ka 1 1 1
+Kd 0.5879999995231628 0.5879999995231628 0.5879999995231628
+Ke 0 0 0
+
+newmtl [Pod_plate_mat]
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pr 0.4343145750507619
+Pds 1
+Pl 1
+Ka 1 1 1
+Kd 1 1 1
+Ke 0 0 0

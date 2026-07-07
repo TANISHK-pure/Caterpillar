@@ -1,0 +1,95 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <model name="truck_797">
+    <static>false</static>
+    
+    <!-- THE ENGINE FIX: Explicitly tuned to the 797 Python Bridge Channel -->
+    <plugin filename="gz-sim-velocity-control-system" name="gz::sim::systems::VelocityControl">
+      <link_name>base_link</link_name> 
+      <topic>/model/truck_797/cmd_vel</topic>
+    </plugin>
+
+    <link name="base_link">
+      <pose>0 0 0.175 0 0 0</pose> 
+      
+      <inertial>
+        <mass>10.0</mass>
+        <inertia>
+          <ixx>0.1</ixx><iyy>0.2</iyy><izz>0.2</izz>
+          <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz>
+        </inertia>
+      </inertial>
+
+      <collision name="collision">
+        <geometry><box><size>0.75 0.45 0.35</size></box></geometry>
+      </collision>
+
+      <!-- 360-Degree Roof LiDAR -->
+      <sensor name="lidar_360" type="gpu_lidar">
+        <pose>0 0 0.5 0 0 0</pose> <!-- Mounted 0.5m high on the roof -->
+        <topic>/model/truck_797/lidar</topic>
+        <update_rate>10</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>360</samples>
+              <resolution>1</resolution>
+              <min_angle>-3.14159</min_angle> <!-- Full 360 sweep -->
+              <max_angle>3.14159</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.2</min>
+            <max>15.0</max> <!-- 15 meter range -->
+            <resolution>0.05</resolution>
+          </range>
+        </ray>
+        <always_on>1</always_on>
+        <visualize>true</visualize>
+      </sensor>
+
+      <visual name="body_visual">
+        <pose>-0.05 0 0 0 0 0</pose>
+        <geometry><box><size>0.65 0.425 0.2</size></box></geometry>
+        <material>
+          <ambient>0.9 0.7 0.1 1</ambient>
+          <diffuse>0.9 0.7 0.1 1</diffuse>
+        </material>
+      </visual>
+
+      <visual name="cab_visual">
+        <pose>0.3 0.125 0.05 0 0 0</pose>
+        <geometry><box><size>0.15 0.15 0.15</size></box></geometry>
+        <material>
+          <ambient>0.1 0.1 0.1 1</ambient>
+          <diffuse>0.1 0.1 0.1 1</diffuse>
+        </material>
+      </visual>
+
+      <visual name="tire_fl">
+        <pose>0.25 0.225 -0.1 1.5707 0 0</pose>
+        <geometry><cylinder><radius>0.075</radius><length>0.075</length></cylinder></geometry>
+        <material><ambient>0.05 0.05 0.05 1</ambient></material>
+      </visual>
+
+      <visual name="tire_fr">
+        <pose>0.25 -0.225 -0.1 1.5707 0 0</pose>
+        <geometry><cylinder><radius>0.075</radius><length>0.075</length></cylinder></geometry>
+        <material><ambient>0.05 0.05 0.05 1</ambient></material>
+      </visual>
+
+      <visual name="tire_rl">
+        <pose>-0.25 0.225 -0.1 1.5707 0 0</pose>
+        <geometry><cylinder><radius>0.075</radius><length>0.075</length></cylinder></geometry>
+        <material><ambient>0.05 0.05 0.05 1</ambient></material>
+      </visual>
+
+      <visual name="tire_rr">
+        <pose>-0.25 -0.225 -0.1 1.5707 0 0</pose>
+        <geometry><cylinder><radius>0.075</radius><length>0.075</length></cylinder></geometry>
+        <material><ambient>0.05 0.05 0.05 1</ambient></material>
+      </visual>
+
+    </link>
+  </model>
+</sdf>
